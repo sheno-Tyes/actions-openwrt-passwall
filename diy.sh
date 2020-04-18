@@ -12,4 +12,5 @@ mkdir package/base-files/files/config
 echo 0xDEADBEEF > package/base-files/files/config/google_fu_mode
 echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.default
 echo 'src-git TinyTitanPro https://github.com/TinyTitanPro/lienol-openwrt-package' >> feeds.conf.default
+./scripts/feeds update TinyTitanPro && ./scripts/feeds install -a -p TinyTitanPro
 ./scripts/feeds update -a && ./scripts/feeds install -a
